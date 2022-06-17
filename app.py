@@ -13,16 +13,9 @@ api.add_resource(Movies, '/api/v1/movies')
 api.add_resource(InitDb, '/api/v1/initdb')
 
 
-# @app.route('/api/v1/movies') # POST
-# @app.route('/api/v1/movies') # PUT
-# @app.route('/api/v1/movies') # DELETE
-# @app.route('/api/v1/initdb') # POST
-
-
 @app.route('/')
 def Hello_algolia():
-    return '<h1>Hello Algolia Test</h1>'
-
+    return '<h1>Hello in my Algolia Test</h1>'
 
 
 if __name__ == "__main__":
