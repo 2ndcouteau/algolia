@@ -8,7 +8,7 @@ import traceback
 
 import os.path
 
-from routes.config import DB_name, eprint, algoliaId, algoliaToken
+from routes.config import DB_name, eprint, algoliaId, algoliaToken, index_name
 
 
 class InitDb(Resource):
@@ -38,7 +38,7 @@ class InitDb(Resource):
             # #########################################
             # Connect and authenticate with your Algolia app
             client = SearchClient.create(algoliaId, algoliaToken)
-            index = client.init_index("movies")
+            index = client.init_index(index_name)
             # Clean the index in case it already exists
             index.delete().wait()
 

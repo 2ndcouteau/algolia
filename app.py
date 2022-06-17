@@ -9,7 +9,7 @@ app = Flask(__name__)
 api = Api(app)
 
 
-api.add_resource(Movies, '/api/v1/movies')
+api.add_resource(Movies, '/api/v1/movies/', '/api/v1/movies/<movieId>')
 api.add_resource(InitDb, '/api/v1/initdb')
 
 
