@@ -131,5 +131,6 @@ dmypy.json
 # Custom
 movies_algolia.db
 movies.json
+samples.json
 
 swagger_tests/
